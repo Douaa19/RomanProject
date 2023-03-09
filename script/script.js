@@ -57,6 +57,3 @@ goToSlide(0);
 for (let i = 0; i < visibleSlides; i++) {
   slides[i].style.display = "block";
 }
- if (condition) {
-    
- }
