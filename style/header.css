@@ -82,6 +82,11 @@ header .red .white-btn {
     line-height: 60px;
 }
 
+header .red .white-btn:hover {
+    border: 3px solid #FF0000;
+    cursor: pointer;
+}
+
 header .red .background .object1 {
     position: relative;
     width: 66px;
@@ -144,3 +149,115 @@ header .card .red-btn img {
     width: 32px;
     height: 68px;
 }
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    header {
+        height: 75vh;
+    }
+
+    header .red {
+        position: absolute;
+        width: 495px;
+        height: 625px;
+    }
+
+    header .red .background {
+        width: 476px;
+        height: 624px;
+        left: 241px;
+        top: 7px;
+    }
+
+    header .red p {
+        font-size: 26px;
+        line-height: 60px;
+    }
+
+    header .red .white-btn {
+        width: 300px;
+        left: 46px;
+        top: 420px;
+        font-size: 22px;
+        line-height: 60px;
+    }
+
+    header .card {
+        left: 708px;
+        width: 271px;
+        height: 387px;
+    }
+
+    header .card .small {
+        content: url("../img/SMALLERIMAGE.svg");
+    }
+
+    header .card p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+        padding: 6px 0 0;
+    }
+
+    header .card .nums {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .card .nums span {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+
+    header .card .red-btn {
+        width: 100%;
+    }
+    
+    header .card .red-btn img {
+        width: 32px;
+        height: 46px;
+    }
+  }
+
+  /* -50px */
+
+  @media screen and (max-width: 600px) {
+    header .red {
+        width: 100%;
+    }
+    
+    header .red .object2 {
+        display: none;
+    }
+
+    header .red .background {
+        position: relative;
+        left: 10%;
+        top: 8%;
+        height: 50%;
+    }
+
+    header .red p {
+        font-size: 18px;
+        line-height: 32px;
+        top: 68%;
+        width: 70%;
+        left: 15%;
+        text-align: center;
+    }
+
+    header .red .white-btn {
+        left: 25%;
+        top: 83%;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    header .card  {
+        display: none;
+    }
+
+  }
