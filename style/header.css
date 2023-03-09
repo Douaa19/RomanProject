@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 96vh;
+    display: flex;
+}
+
+header .red {
+    position: absolute;
+    width: 720px;
+    height: 675px;
+    left: 0px;
+    top: 0px;
+    background: #FF0000;
+}
+
+header .red .logo img {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 30px;
+    top: 33px;
+}
+
+header .red .cercle {
+    position: absolute;
+    width: 294px;
+    height: 294px;
+    left: -85px;
+    top: 109px;
+    background: #DB0000;
+    box-shadow: 0px 21px 19px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+}
+
+header .red .background {
+    background: url("../img/BigImage.svg");
+    position: absolute;
+    width: 476px;
+    height: 624px;
+    left: 482px;
+    top: 51px;
+}
+
+header .red p {
+    position: absolute;
+    width: 510px;
+    height: 206px;
+    left: 36px;
+    top: 225px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+header .red .white-btn {
+    text-transform: uppercase;
+    position: absolute;
+    width: 322px;
+    height: 74px;
+    left: 46px;
+    top: 468px;
+    border: none;
+    border-radius: 0 80px;
+    color: #FF0000;
+    background-color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 60px;
+}
+
+header .red .white-btn:hover {
+    border: 3px solid #FF0000;
+    cursor: pointer;
+}
+
+header .red .background .object1 {
+    position: relative;
+    width: 66px;
+    height: 105px;
+    top: 78%;
+    left: 28px;
+}
+
+header .red .background .object2 {
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    left: 402px;
+    top: -22px;
+}
+
+header .card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 1150px;
+    top: 192px;
+    width: 308px;
+    height: 192px;
+}
+
+header .card p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 35px;
+    color: #000000;
+    width: 308px;
+    padding: 12px 0 0;
+}
+
+header .card .nums {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .card .nums span {
+    color: #000000;
+    font-family: 'Poppins';
+    font-size: 26px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+header .card .red-btn {
+    width: 100%;
+    border: none;
+    border-radius: 0 80px;
+    background-color: #FF0000;
+}
+
+header .card .red-btn img {
+    width: 32px;
+    height: 68px;
+}
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    header {
+        height: 90vh;
+    }
+
+    header .red {
+        position: absolute;
+        width: 495px;
+        height: 625px;
+    }
+
+    header .red .background {
+        width: 476px;
+        height: 624px;
+        left: 241px;
+        top: 7px;
+    }
+
+    header .red p {
+        font-size: 26px;
+        line-height: 60px;
+    }
+
+    header .red .white-btn {
+        width: 300px;
+        left: 46px;
+        top: 420px;
+        font-size: 22px;
+        line-height: 60px;
+    }
+
+    header .card {
+        left: 708px;
+        width: 271px;
+        height: 387px;
+    }
+
+    header .card .small {
+        content: url("../img/SMALLERIMAGE.svg");
+    }
+
+    header .card p {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+        padding: 6px 0 0;
+    }
+
+    header .card .nums {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .card .nums span {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+
+    header .card .red-btn {
+        width: 100%;
+    }
+    
+    header .card .red-btn img {
+        width: 32px;
+        height: 46px;
+    }
+  }
+
+  /* -50px */
+
+  @media screen and (max-width: 600px) {
+    header .red {
+        width: 100%;
+    }
+    
+    header .red .object2 {
+        display: none;
+    }
+
+    header .red .background {
+        position: relative;
+        left: 10%;
+        top: 8%;
+        height: 50%;
+    }
+
+    header .red p {
+        font-size: 18px;
+        line-height: 32px;
+        top: 68%;
+        width: 70%;
+        left: 15%;
+        text-align: center;
+    }
+
+    header .red .white-btn {
+        left: 25%;
+        top: 83%;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    header .card  {
+        display: none;
+    }
+
+  }
