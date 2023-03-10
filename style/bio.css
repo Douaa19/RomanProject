@@ -115,16 +115,66 @@
     .bio .content .text {
         position: relative;
         left: 13%;
-        width: auto;
+        width: min-content;
     }
 
     .bio .content .text .title .sp1, .sp2 {
         font-size: 264px;
-        line-height: 36px;
+        line-height: 26px;
     }
 
     .bio .content .text p {
         font-size: 18px;
         width: 730px;
+    }
+    
+    .bio .content .text .title {
+        width: min-content;
+    }
+    
+    .bio .content .text .i {
+        width: 730px;
+    }
+
+    .bio .content .cercle img {
+        position: absolute;
+        left: 895px;
+        top: 2589px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bio .content .text {
+        position: relative;
+    top: 20%;
+        left: 10%;
+        width: min-content;
+        height: 575px;
+    }
+
+    .bio .content .text .title .sp1, .sp2 {
+        font-size: 170px;
+    }
+
+    .bio .content .text p {
+        font-size: 16px;
+        width: 470px;
+        height: max-content;
+    }
+    
+    .bio .content .text .title {
+        width: min-content;
+    }
+    
+    .bio .content .text .i {
+        width: 470px;
+        position: absolute;
+        top: 85%;
+    }
+
+    .bio .content .cercle img {
+        position: absolute;
+        left: 495px;
+        top: 2542px;
     }
 }
