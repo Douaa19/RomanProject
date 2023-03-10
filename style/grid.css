@@ -1,0 +1,155 @@
+.grid-section {
+    background-color: #DE0000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 0;
+}
+
+.grid-section .title {
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 0 0 62px;
+}
+
+.grid-section .cercle {
+    position: absolute;
+    left: -80px;
+    top: 2543px;
+}
+
+.grid-section .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 52px;
+    position: relative;
+}
+
+.grid-section .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.grid-section .cards .card h4 {
+    font-family: 'Poppins';
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.grid-section .cards .card span {
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.grid-section .cards .card .video {
+    margin: 0 0 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-section .cards .card .video .rec {
+    position: absolute;
+}
+
+.grid-section button {
+    text-transform: uppercase;
+    width: 322px;
+    height: 74px;
+    border: none;
+    border-radius: 0 80px;
+    color: #FF0000;
+    background-color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 60px;
+}
+
+.grid-section button:hover {
+    border: 2px solid #FF0000;
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
+
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    .grid-section .title {
+        font-size: 26px;
+    }
+
+    .grid-section .cercle {
+        position: absolute;
+        left: 0px;
+        top: 3386px;
+    }
+
+    .grid-section .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 52px;
+    }
+
+    .grid-section button {
+        width: 300px;
+        font-size: 22px;
+        line-height: 60px;
+    }
+
+    .grid-section .cards .card h4 {
+        font-size: 24px;
+    }
+    
+    .grid-section .cards .card span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-section .title {
+        font-size: 18px;line-height: 32px;
+    }
+
+    .grid-section .cercle {
+        position: absolute;
+        top: 3330px;
+    }
+
+    .grid-section .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 52px;
+        position: relative;
+    }
+
+    .grid-section button {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .grid-section .cards .card h4 {
+        font-size: 18px;
+    }
+    
+    .grid-section .cards .card span {
+        font-size: 16px;
+    }
+}
