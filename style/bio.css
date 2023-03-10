@@ -1,0 +1,130 @@
+.bio {
+    
+}
+
+.bio h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio .content {
+    width: 100%;
+    height: 744px;
+    background-color: #000000;
+}
+
+.bio .content .person {
+    position: absolute;
+    left: -12px;
+    top: 1591px;
+}
+
+.bio .content .cercle img {
+    position: absolute;
+    left: 1416px;
+    top: 1745px;
+}
+
+.bio .content .text {
+    position: relative;
+    left: 383px;
+    top: 170px;
+    width: min-content;
+}
+
+.bio .content .text .title {
+    width: 100%;
+    display: flex;
+}
+
+.bio .content .text .title .sp1, .sp2 {
+    font-family: 'Six Caps';
+    font-weight: 400;
+    font-size: 364px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bio .content .text .sp1 {
+    color: #FFFFFF;
+}
+
+.bio .content .text .sp2 {
+    color: #FF0000;
+}
+
+.bio .content .text p {
+    font-size: 21px;
+    font-family: 'Montserrat';
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: justify;
+    width: 1006px;
+    height: 206px;
+    position: relative;
+    left: 0px;
+    top: 165px;
+}
+
+.bio .content .text .i {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+}
+
+.bio .content .text .i .icons {
+    display: flex;
+    justify-content: center;
+}
+
+.bio .content .text .i .icons img {
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.bio .content .text .i .under-i {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+/* media query */
+
+@media screen and (max-width: 992px) {
+    .bio .content .person {
+        display: none;
+    }
+
+    .bio .content .text {
+        position: relative;
+        left: 13%;
+        width: auto;
+    }
+
+    .bio .content .text .title .sp1, .sp2 {
+        font-size: 264px;
+        line-height: 36px;
+    }
+
+    .bio .content .text p {
+        font-size: 18px;
+        width: 730px;
+    }
+}
