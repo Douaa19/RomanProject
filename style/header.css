@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;700&family=Six+Caps&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&family=Six+Caps&display=swap');
 
 * {
@@ -86,6 +85,7 @@ header .red .white-btn {
 header .red .white-btn:hover {
     border: 3px solid #FF0000;
     cursor: pointer;
+    transform: translateY(2px);
 }
 
 header .red .background .object1 {
@@ -144,6 +144,12 @@ header .card .red-btn {
     border: none;
     border-radius: 0 80px;
     background-color: #FF0000;
+}
+
+header .card .red-btn:hover {
+    border: #FFFFFF 2px solid;
+    cursor: pointer;
+    transform: translateY(2px);
 }
 
 header .card .red-btn img {
